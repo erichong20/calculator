@@ -95,11 +95,14 @@ footer {
     justify-content: space-around;
     flex-direction: column;
     padding: 10px;
+
   }
 
   .current {
     color: white;
     font-size: 2.2em;
+    max-width: 290px;
+    overflow: hidden;
   }
 
   .secondary {
