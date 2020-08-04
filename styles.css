@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.main-grid{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 90px repeat(5,80px);
+    max-width: 320px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, .05);
+    border: 1px solid rgba(255, 255, 255, .05);
+    color: rgba(255, 255, 255, .775);
+    cursor: pointer;
+    font-size: 1.5em;
+    outline: none;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, .25);
+    color: rgba(255, 255, 255, 1);
+  }
+
+body{
+    font-family: 'Bebas Neue', sans-serif;
+    height: 100%;
+    position: relative;
+    margin:0;
+    padding:0;
+    background: linear-gradient(90deg,rgba(2,2,90,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+.main-container {
+    min-height: 100vh; /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 50px; /* height of your footer */
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, .375);
+    border-radius: 0.75em 0.75em 0 0;
+    
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .current {
+    color: white;
+    font-size: 2.2em;
+  }
+
+  .secondary {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5em;
+  }
