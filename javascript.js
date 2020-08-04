@@ -22,7 +22,11 @@ function multiply(a,b){
 }
 
 function divide(a,b){
-    return a/b;
+    if(b!==0){
+        return a/b;
+    } else {
+        return "DIVIDE BY ZERO ERROR"
+    }
 }
 
 function operate(x, ope, y){

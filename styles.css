@@ -7,6 +7,28 @@
     box-sizing: border-box;
 }
 
+@media only screen and (max-width: 450px),(max-height: 650px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 80px repeat(5, 80px);
+    }
+
+    .button{
+        font-size: 1.75em;
+    }
+}
+
+@media only screen and (max-width: 350px), (max-height: 500px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 65px repeat(5, 65px);
+    }
+
+    .button{
+        font-size: 1.625em;
+    }
+}
+
 .main-grid{
     margin-left: auto;
     margin-right: auto;
