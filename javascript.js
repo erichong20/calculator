@@ -70,7 +70,9 @@ clearButton.addEventListener('click', ()=> {
 });
 
 percentButton.addEventListener('click', ()=> {
-    displayVal = String(Number(displayVal)/100);
+    if(displayVal!=="" && displayVal !== "0"){
+        displayVal = String(Number(displayVal)/100);
+    }
     updateDisplay();
 });
 
